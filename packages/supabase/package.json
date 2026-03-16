@@ -1,0 +1,20 @@
+{
+  "name": "@docupilot/supabase",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "migrate": "supabase db push",
+    "reset": "supabase db reset",
+    "generate-types": "supabase gen types typescript --local > src/database.types.ts",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.47.0"
+  },
+  "devDependencies": {
+    "supabase": "^1.220.0",
+    "typescript": "^5.7.0"
+  }
+}
