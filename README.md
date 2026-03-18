@@ -1,27 +1,41 @@
-# DocuPilot
+# docupilot
 
-> AI-Powered API Documentation Generator
+**AI-powered API documentation generator**
 
-## Overview
+![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
 
-DocuPilot automatically generates beautiful, comprehensive API documentation from your codebase. Point it at your API endpoints and get interactive docs with examples, error codes, and SDK snippets.
-
-## Key Features
-
-- ****
-
-## Tech Stack
-
-Python,Claude API,React,Node.js,Docker
-
-## Getting Started
-
+## Install
 ```bash
-git clone https://github.com/MukundaKatta/docupilot.git
-cd docupilot
-pip install -e .
+npm install
 ```
 
----
+## Quick Start
+```typescript
+import { Docupilot } from "./docupilot";
+const instance = new Docupilot()
+const r = await instance.process({ input: 'test' })
+```
 
-**Mukunda Katta** · [Officethree Technologies](https://github.com/MukundaKatta/Office3) · 2026
+## CLI
+```bash
+npx tsx src/cli.ts status
+npx tsx src/cli.ts run --input "data"
+```
+
+## API
+| Method | Description |
+|--------|-------------|
+| `process()` | Process |
+| `analyze()` | Analyze |
+| `transform()` | Transform |
+| `validate()` | Validate |
+| `export()` | Export |
+| `get_stats()` | Get stats |
+
+## Test
+```bash
+npx vitest
+```
+
+## License
+(c) 2026 Officethree Technologies. All Rights Reserved.
